@@ -1,0 +1,56 @@
+<div class="banner2-container1 thq-section-padding">
+  <div class="banner2-max-width thq-section-max-width">
+    <div class="banner2-container2">
+      <h2 class="banner2-title thq-heading-2">
+        <ng-container>
+          <ng-template #defaultHeading1>
+            <div class="banner2-fragment3">
+              <span class="banner2-text5">
+                Welcome to Smart Healthcare Portal
+              </span>
+            </div>
+          </ng-template>
+          <ng-container
+            *ngTemplateOutlet="heading1 ? heading1 : defaultHeading1"
+          ></ng-container>
+        </ng-container>
+      </h2>
+      <h3 class="banner2-text1 thq-heading-3">
+        <ng-container>
+          <ng-template #defaultContent1>
+            <div class="banner2-fragment1">
+              <span class="banner2-text3">
+                Your one-stop solution for all your healthcare needs
+              </span>
+            </div>
+          </ng-template>
+          <ng-container
+            *ngTemplateOutlet="content1 ? content1 : defaultContent1"
+          ></ng-container>
+        </ng-container>
+      </h3>
+    </div>
+    <button type="button" class="banner2-button thq-button-filled">
+      <span>
+        <ng-container>
+          <ng-template #defaultAction1>
+            <div class="banner2-fragment2">
+              <span class="banner2-text4">Get Started</span>
+            </div>
+          </ng-template>
+          <ng-container
+            *ngTemplateOutlet="action1 ? action1 : defaultAction1"
+          ></ng-container>
+        </ng-container>
+      </span>
+    </button>
+    <video
+      [attr.src]="video1Src"
+      loop="true"
+      muted="true"
+      [attr.poster]="video1Poster"
+      autoplay="true"
+      class="banner2-video"
+    ></video>
+  </div>
+</div>
